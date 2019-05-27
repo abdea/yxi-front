@@ -10,7 +10,7 @@
 .try .editor.row .control-label{display:inline-block;position:relative;top:-4px;margin-right:4px}
 .try .editor .editor-frame{position:relative}
 .try .editor .editor-frame, #editor{height:777px;margin-bottom:10px;border:1px solid rgb(77, 77, 77)}
-#result {height:222px; width: 100%;margin-top:10px;border:1px solid rgb(77, 77, 77)}
+#result {height:222px; width: 100%;resize:vertical; margin-top:10px;border:1px solid rgb(77, 77, 77)}
 .try .editor .editor-frame .loading{position:absolute;height:100%;width:100%;background-color:rgba(255,255,255,.5);margin:0 auto;display:none;z-index:100}
 .try .editor .editor-frame .progress{width:50%;margin:15% auto 0}
 .try .editor .editor-frame .progress .bar{width:100%;background-color:#4bb1cf; text-align: center;}
@@ -126,7 +126,7 @@ $(document).ready(function() {
         $("#btnRun").click(runCode);
         $("#btnDownload").click(downloadCode);
     });
-    $("#menubar").height(30);
+    $("#menubar").height(60);
     initLayout();
     window.onresize = function () {
         initLayout()
